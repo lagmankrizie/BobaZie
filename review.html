@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>BobaZie</title>
+	<meta charset = "utf-8"/>
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0"/>
+	<link rel ="stylesheet" href ="styles.css" type ="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+</head>
+
+<body>
+	<div id ="container">
+	<header>
+    <a href="index.html">
+        <img src="img/bobazie logo.png" alt="BobaZie Logo" />
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+	</header>
+	
+	<main>
+		<div id ="form">
+			<p>Thank you for your review! We really appreciate you taking the time to share your feedback with us. As a token of our appreciation, please enjoy 10% off on your next order as a reward for giving us a review.</p>
+
+            <p>All information your provide will be kept confidential and used only to help us improve.</p>
+			
+			<form class="form-grid">
+				<fieldset>
+					<legend>Customer Details</legend>
+					<label  for ="fName">First Name:</label><br>
+					<input type="text" id ="fName" name ="fName" required /><br>
+					
+					<label  for ="lName">Last Name:</label><br>
+					<input type="text" id ="lName" name ="lName" required /><br>
+					
+					<label  for ="email">Email:</label><br>
+					<input type="email" id ="email" name ="email" required /><br>
+					
+					<label  for ="phone">Phone:</label><br>
+					<input type="tel" id ="phone" name ="phone" required />
+				</fieldset>
+				
+				<fieldset>
+					<legend>Customer feedbacks</legend>
+					<label for ="date">Date of visit:</label><br>
+                    <input type="date" id ="date" name ="date"/><br>
+
+                    <p>Order Type:</p>
+                    <input type="radio" id ="dinein" name ="dinein" value ="Dine-In" />
+                    <label for ="dinein">Dine-In</label>
+                    
+                    <input type="radio" id ="takeout" name ="takeout" value ="Takeout" />
+                    <label for ="takeout">Takeout</label>
+                    
+                    <input type="radio" id ="delivery" name ="delivery" value = "Delivery" />
+                    <label for ="delivery">Delivery</label><br>
+                    
+                    <label for ="order">What did you order?</label><br>
+					<select name ="order" id="order">
+						<option value="winter">Wintermelon Milktea</option>
+						<option value="oki">Okinawa Milktea</option>
+						<option value="oreo">Oreo Milktea</option>
+						<option value="choco">Chocolate Milktea</option>
+						<option value="matcha">Matcha Milktea</option>
+                        <option value="taro">Taro Milktea</option>
+					</select><br>
+
+                    <div class ="formRow">
+                    <label for = "rangeBox">Rate your drink(0=Very Bad; 10=Very Good)</label><br>
+                    0 <input type ="range" name = "serviceRate" id ="rangeBox" value ="5" step="1" min ="0" max ="10">
+                    10
+                    </div>
+					
+					<label for="feedback">Your Feedback</label><br>
+					<textarea id ="feedback"  name ="feedback" row="5" cols="35"></textarea>
+				</fieldset>
+				<input type ="reset" id ="reset" value = "reset"/>
+				<input type="submit" id="submit" value="submit" class="btn" />
+			</form>
+		</div>
+	</main>
+	
+	<footer>
+		<p>&copy; Copyright 2025. All rights reserved. Created by Krizie Lagman</p>
+		<p><img src="img/ig-logo.png" class="ig" alt="ig logo"><img src="img/fb-logo.png" class="fb" alt="fb logo"><a href ="">BobaZie</a></p>
+	</footer>
+	
+</body>
+</html>
