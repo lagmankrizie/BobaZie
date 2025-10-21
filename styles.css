@@ -376,6 +376,11 @@ form.form-grid fieldset {
 }
 
 /*Contact us Info css Styles*/
+.tel-link{
+    font-size: 1.3em;
+    font-family: 'Nerko One', cursive;
+}
+
 #contact h3 {
     text-align: center;
 }
