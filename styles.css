@@ -270,7 +270,7 @@ input[type="radio"] {
 
 input[type="radio"] + label {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-left: 2px;
     margin-bottom:20px;
 }
