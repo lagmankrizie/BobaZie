@@ -86,6 +86,11 @@ nav li a {
     color: #876E4B;
 }
 
+nav li a:hover {
+    background-color: #CEB091;
+    border-radius: 5px;
+}
+
 .hamburger-menu.active span:nth-child(1) {
     transform: rotate(45deg) translate(8px, 8px);
 }
@@ -441,6 +446,11 @@ footer img {
 
     .hamburger-menu {display: none;}
 
+    nav li a:hover {
+        background-color: transparent;
+        border-radius: 0;
+    }
+
     nav ul {
         position: static;
         display: flex;
@@ -563,6 +573,11 @@ footer img {
     .mobile {display: none;}
 
     .hamburger-menu {display: none;}
+
+    nav li a:hover {
+        background-color: transparent;
+        border-radius: 0;
+    }
 
     nav ul {
         position: static;
