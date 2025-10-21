@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Nerko One", cursive;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+nav li {
+    font-size: 1.3em;
+    font-family: "Nerko One", cursive;
+}
+
+nav li a {
+    padding: 8px 12px;
+    color: #876E4B;
+    text-decoration: none;
+}
+
+/* Show mobile, hide tablet-desktop by default */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+.tel-link {
+    display: block;
+}
+
+.tel-num {
+    display: none;
+}
+
+main {
+    background-color: #af804f;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+#hero {
+    margin: 5px 0;
+    text-align: center;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.hours {
+    margin-left: 10%;
+    padding: 10px 0;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button1 {
+    background-color: #fff;
+    color: #CEB091;
+}
+
+.button2 {
+    background-color: #CEB091;
+    color: #fff;
+    border: 2px solid #CEB091;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-weight: bold;
+}
+
+caption, h3{
+    font-family:  "Nerko One", cursive;
+    color: white;
+    font-size: 1.3em;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+/*Form CSS Styles*/
+#form h3{
+    text-align: center;
+}
+#form p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+legend {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 6px;
+    background-color: white;
+    color: #af804f;
+    font-family:  "Nerko One", cursive;
+}
+
+label {
+    display: block;
+    margin-left: 8px;
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 60%;
+    padding: 6px 8px;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95em;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-bottom:20px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 2px;
+    margin-bottom:20px;
+}
+
+input[type="range"] {
+    width: 50%;
+    margin-top: 4px;
+    accent-color: #ceaf91;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none;
+    height: 70px;
+    width: 70%;
+}
+
+form.form-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    
+}
+
+form.form-grid fieldset {
+    flex: 1 1 400px;
+}
+
+#form .form-buttons {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.btn {
+    background-color: #ceaf91;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+
+/*Video and Menu Styles*/
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 10px;
+}
+
+.menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.menu figure {
+  background-color: #F5E6D3;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 250px;
+  overflow: hidden;
+}
+
+.menu figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.menu img {
+  width: 50%;
+  border-radius: 10px;
+  margin: 0 auto 8px auto;
+}
+
+.menu figcaption {
+  font-family: 'Nerko One', cursive;
+  font-size: 1.1em;
+  color: #876E4B;
+  margin-bottom: 4px;
+}
+
+.menu .description {
+  font-size: 0.7em;
+  color: #000;
+  text-align: left;
+  line-height: 1.2em;
+  margin-bottom: 6px;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu .price {
+  font-size: 1em;
+  color: #876E4B;
+  font-weight: bold;
+  font-family: 'Nerko One', cursive;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+#contact h3 {
+    text-align: center;
+    }
+
+.tel-num, p {
+    color: #fff;
+    text-align: center;
+    }
+
+#contact p {
+    margin: 5px 0;
+    }
+
+#contact h4 {
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+    }
+
+.map {
+    border: 2px solid #000;
+	width: 100%;
+	height: 300px;
+    margin: 0;
+    border-radius: 5px;}
+
+/* CSS style for footer */
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.85em;
+    color: #000;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin:0;
+}
+
+
+/*MEDIA QUERY FOR TABLET VIEWPORT*/
+@media screen and (min-width: 630px) {
+    .tablet-desktop {display: block;}
+
+    .mobile {display: none;}
+    
+    .content-section {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .menu {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 700px;
+    }
+
+    .video {width: 100%;}
+
+    .video iframe {
+        width: 100%;
+        border-radius: 10px;
+        height: 380px;
+    }
+
+    .menu .description{font-size: 0.6em;}
+
+    form {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+    /* Style rule for table*/
+    table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 10px;
+    }
+
+    th, td {
+    border: 1px solid #000;
+    padding: 2%;
+    }
+
+    th {
+    background-color: #795548;
+    color: #000;
+    font-size: 1em;
+    }
+
+    td {
+    text-align: center;
+    color: #000;
+    }
+
+    tr:nth-child(odd) {
+    background-color: #a1887f;
+    }
+
+    tr:nth-child(even) {
+    background-color: white;
+    }
+
+    #contact h3 {
+    text-align: center;
+    }
+
+    .tel-num, p {
+    color: #fff;
+    text-align: center;
+    }
+
+    #contact p {
+    margin: 5px 0;
+    }
+
+    #contact h4 {
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+    }
+}
+
+/*MEDIA QUERY FOR DESKTOP VIEWPORT*/
+@media screen and (min-width: 1015px){
+    .tablet-desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+
+    .tel-link {
+        display: none;
+    }
+
+    .tel-num {
+        display: block;
+    }
+
+    .content-section {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    }
+
+    .video,.menu {
+    flex: 1;
+    }
+
+    .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: stretch;
+    }
+
+    .menu figure{
+    height: 100%;
+    max-height: 250px;
+    }
+
+    .video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    }
+
+    table{
+        width: 50%;
+        float: left;
+    }
+
+    .map{
+    width: 48%;
+    height: 160px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 2px solid #000;
+    }
+
+    form{
+		width: auto;
+	}
+
+	.form-grid{
+		display: grid;
+		grid-template-columns:auto auto;
+		grid-gap: 50px;
+	}
+}
