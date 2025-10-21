@@ -429,7 +429,7 @@ footer img {
 }
 
 /*MEDIA QUERY FOR TABLET VIEWPORT*/
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 630px), print{
     .tablet-desktop {display: block;}
 
     .mobile {display: none;}
@@ -552,7 +552,7 @@ footer img {
 }
 
 /*MEDIA QUERY FOR DESKTOP VIEWPORT*/
-@media screen and (min-width: 1015px){
+@media screen and (min-width: 1015px), print{
     .tablet-desktop {display: block;}
 
     .mobile {display: none;}
@@ -653,4 +653,12 @@ footer img {
         grid-template-columns:auto auto;
         grid-gap: 50px;
     }
+}
+
+/*MEDIA QUERY FOR PRINT*/
+@media print{
+	body{
+		background-color: #fff;
+		color: #000;
+	}
 }
