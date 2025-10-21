@@ -5,10 +5,10 @@
 	<meta charset = "utf-8"/>
 	<meta name ="viewport" content ="width=device-width, initial-scale=1.0"/>
 	<link rel ="stylesheet" href ="styles.css" type ="text/css" />
-    <script src="script.js"></script>
+	<script src="script.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel ="shortcut icon" href="img/favicon.ico"/>
+	<link rel ="shortcut icon" href="img/favicon.ico"/>
 	<link rel ="icon" type ="image/png" sizes ="32x32" href="img/fabicon-32.png"/>
 	<link rel ="apple-touch-icon" sizes="180x180" href="img/apple.png"/>
 	<link rel ="icon" sizes ="192x192" href ="img/android.png"/>
@@ -23,7 +23,7 @@
     </a>
 
     <nav>
-        <div class="hamburger-menu" id ="hamburger-menu">
+		<div class="hamburger-menu" id ="hamburger-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -38,56 +38,73 @@
 	</header>
 	
 	<main>
-        <div class="content-section">
-            <div class="video tablet-desktop">
-                <iframe src="https://www.youtube.com/embed/DbPeTRRUpOU?si=AlBxL2x2jtu-GJ2W" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </div>
+		<div id ="form">
+			<h3>Customer Reviews</h3>
+			<p>Thank you for your review! We really appreciate you taking the time to share your feedback with us. As a token of our appreciation, please enjoy 10% off on your next order as a reward for giving us a review.</p>
 
-            <div class="menu">
-                <figure>
-                    <img src="img/wintermelon.png" alt="Wintermelon Milktea">
-                    <figcaption>Wintermelon Milktea</figcaption>
-                    <p class="description">Light and refreshing with a natural honey-like sweetness that pairs perfectly with chewy pearls.</p>
-                    <p class="price">₱100</p>
-                </figure>
+            <p>All information your provide will be kept confidential and used only to help us improve.</p>
+			
+			<form class="form-grid">
+				<fieldset>
+					<legend>Customer Details</legend>
+					<label  for ="fName">First Name:</label>
+					<input type="text" id ="fName" name ="fName" required />
+					
+					<label  for ="lName">Last Name:</label>
+					<input type="text" id ="lName" name ="lName" required />
+					
+					<label  for ="email">Email:</label>
+					<input type="email" id ="email" name ="email" required />
+					
+					<label  for ="phone">Phone:</label>
+					<input type="tel" id ="phone" name ="phone"  required />
+				</fieldset>
+				
+				<fieldset>
+					<legend>Customer feedbacks</legend>
+					<label for="date">Date of Purchase:</label>
+					<input type="date" id="date" name="date"  />
 
-                <figure>
-                <img src="img/okinawa.png" alt="Okinawa Milktea">
-                <figcaption>Okinawa Milktea</figcaption>
-                <p class="description">A rich and creamy milktea sweetened with roasted brown sugar, giving it a smooth caramel taste.</p>
-                <p class="price">₱100</p>
-                </figure>
+                    <label>Order Type:</label>
+    
+					<input type="radio" id="dine-in" name="order-type" value="dine-in">
+					<label for="dine-in">Dine In</label>
+					
+					<input type="radio" id="take-out" name="order-type" value="take-out">
+					<label for="take-out">Take Out</label>
+					
+					<input type="radio" id="delivery" name="order-type" value="delivery">
+					<label for="delivery">Delivery</label>
+                    
+                    <label for ="order">What did you order?</label>
+					<select name ="order" id="order">
+						<option value=""></option>
+						<option value="winter">Wintermelon Milktea</option>
+						<option value="oki">Okinawa Milktea</option>
+						<option value="oreo">Oreo Milktea</option>
+						<option value="choco">Chocolate Milktea</option>
+						<option value="matcha">Matcha Milktea</option>
+                        <option value="taro">Taro Milktea</option>
+					</select><br>
 
-                <figure>
-                <img src="img/oreo.png" alt="Oreo Milktea">
-                <figcaption>Oreo Milktea</figcaption>
-                <p class="description">A delightful mix of creamy milktea with crushed oreo cookie in a cup!</p>
-                <p class="price">₱100</p>
-                </figure>
-
-                <figure>
-                <img src="img/chocolate.png" alt="Chocolate Milktea">
-                <figcaption>Chocolate Milktea</figcaption>
-                <p class="description">Classic and indulgent, this chocolatey milktea is rich, smooth, and perfect for sweet cravings.</p>
-                <p class="price">₱130</p>
-                </figure>
-
-                <figure>
-                <img src="img/matcha.png" alt="Matcha Milktea">
-                <figcaption>Matcha Milktea</figcaption>
-                <p class="description">Authentic Japanese matcha whisked with milk for an earthy, energizing flavor.</p>
-                <p class="price">₱120</p>
-                </figure>
-
-                <figure>
-                <img src="img/taro.png" alt="Taro Milktea">
-                <figcaption>Taro Milktea</figcaption>
-                <p class="description">Sweet and nutty taro flavor blended with creamy milk, topped with pearls for a chewy twist.</p>
-                <p class="price">₱100</p>
-                </figure>
-            </div>
-        </div>
-    </main>
+				<div class="formRow">
+					<label for="rangeBox">Rate your drink (0=Very Bad; 10=Very Good)</label><br>
+					<input type="range" id="rangeBox" name="serviceRate" value="10" step="1" min="0" max="10">
+					<output id="rangeValue">10</output>
+				</div>
+									
+					<label for="feedback">Your Feedback</label>
+					<textarea id ="feedback"  name ="feedback" row="5" cols="35"></textarea>
+				</fieldset>
+				
+				<div class="form-buttons">
+       				<input type="reset" id="reset" value="Reset" class="btn" />
+        			<input type="submit" id="submit" value="Submit" class="btn" />
+    			</div>
+			</form>
+		</div>
+	</main>
+	
 	<footer>
 		<p>&copy; Copyright 2025. All rights reserved. Created by Krizie Lagman</p>
 		<p>
@@ -100,6 +117,8 @@
             <a href="https://www.facebook.com/share/1ETQhk25bj/?mibextid=wwXIfr">BobaZie</a>
         </p>
 	</footer>
-	
 </body>
+	<div class="success-popup" id="successPopup">
+		✓ Successfully submitted! Thank you for your Feedbacks.
+	</div>
 </html>
