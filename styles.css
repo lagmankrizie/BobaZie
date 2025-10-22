@@ -659,12 +659,12 @@ footer img {
     }
 
     .milktea {
-        max-width: 600px;
+        max-width: 500px;
         width: 100%;
         height: auto;
         display: inline-block;
         vertical-align: middle;
-        margin-left: 150px;
+        margin-left: 120px;
     }
 
     .tel-link {display: none;}
@@ -705,7 +705,7 @@ footer img {
 
     .map{
         width: 48%;
-        height: 150px;
+        height: 160px;
         border-radius: 5px;
         margin-top: 10px;
         margin-left: 15px;
