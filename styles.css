@@ -699,13 +699,13 @@ footer img {
     }
 
     table{
-        width: 48%;
+        width: 50%;
         float: left;
     }
 
     .map{
         width: 48%;
-        height: 150px;
+        height: 160px;
         border-radius: 5px;
         margin-top: 10px;
         margin-left: 15px;
